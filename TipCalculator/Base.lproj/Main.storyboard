@@ -70,6 +70,7 @@
                     <connections>
                         <outlet property="billAmountTextField" destination="43q-eu-clt" id="Vul-Pn-XjK"/>
                         <outlet property="displayTip" destination="28q-py-jYh" id="9vW-r6-OSA"/>
+                        <outlet property="tipAmountTextField" destination="cJl-bA-lU9" id="Yg4-zy-1EG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

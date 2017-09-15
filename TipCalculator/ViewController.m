@@ -13,6 +13,8 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
 @property (weak, nonatomic) IBOutlet UILabel *displayTip;
+@property (weak, nonatomic) IBOutlet UITextField *tipAmountTextField;
+
 
 @end
 
@@ -30,14 +32,22 @@
 }
 - (IBAction)calculateTip:(id)sender {
     CalculatorTip *newTip = [[CalculatorTip alloc] init];
-    float intVal = [self.billAmountTextField.text floatValue];
+    float floatBillVal = [self.billAmountTextField.text floatValue];
+    float floatTipVal = [self.tipAmountTextField.text floatValue];
     
-    newTip.tip = 0.15;
-    float newTipInNumValue = [newTip calculateTip:intVal];
+    newTip.tip = (floatTipVal/100);
     
-    float displayTipInNum = [self.displayTip.text floatValue];
+    float newTipInNumValue = [newTip calculateTip:floatBillVal];
     
-    displayTipInNum = newTipInNumValue;
+    //NSString *stringNum = @(newTipInNumValue).stringValue;
+    
+    NSString *newStringNum = [[NSNumber numberWithFloat:newTipInNumValue]stringValue];
+    
+    self.displayTip.text = newStringNum;
+    
+    
+    
+    
 }
 
 
