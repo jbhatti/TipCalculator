@@ -25,6 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)calculateTip:(id)sender {
+    
+}
 
 
 @end
