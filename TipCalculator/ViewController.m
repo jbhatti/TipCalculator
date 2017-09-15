@@ -7,9 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "CalculatorTip.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billAmountTextField;
+@property (weak, nonatomic) IBOutlet UILabel *displayTip;
 
 @end
 
@@ -26,8 +29,18 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)calculateTip:(id)sender {
+    CalculatorTip *newTip = [[CalculatorTip alloc] init];
+    float intVal = [self.billAmountTextField.text floatValue];
     
+    newTip.tip = 0.15;
+    float newTipInNumValue = [newTip calculateTip:intVal];
+    
+    float displayTipInNum = [self.displayTip.text floatValue];
+    
+    displayTipInNum = newTipInNumValue;
 }
+
+
 
 
 @end

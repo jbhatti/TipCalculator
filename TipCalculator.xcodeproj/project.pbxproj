@@ -13,6 +13,7 @@
 		88DEDA211F6C2C08007E5D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DEDA1F1F6C2C08007E5D03 /* Main.storyboard */; };
 		88DEDA231F6C2C08007E5D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DEDA221F6C2C08007E5D03 /* Assets.xcassets */; };
 		88DEDA261F6C2C08007E5D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DEDA241F6C2C08007E5D03 /* LaunchScreen.storyboard */; };
+		88DEDA2F1F6C50AE007E5D03 /* CalculatorTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DEDA2E1F6C50AE007E5D03 /* CalculatorTip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		88DEDA221F6C2C08007E5D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DEDA251F6C2C08007E5D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88DEDA271F6C2C08007E5D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DEDA2D1F6C50AE007E5D03 /* CalculatorTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTip.h; sourceTree = "<group>"; };
+		88DEDA2E1F6C50AE007E5D03 /* CalculatorTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTip.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				88DEDA241F6C2C08007E5D03 /* LaunchScreen.storyboard */,
 				88DEDA271F6C2C08007E5D03 /* Info.plist */,
 				88DEDA161F6C2C08007E5D03 /* Supporting Files */,
+				88DEDA2D1F6C50AE007E5D03 /* CalculatorTip.h */,
+				88DEDA2E1F6C50AE007E5D03 /* CalculatorTip.m */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DEDA1E1F6C2C08007E5D03 /* ViewController.m in Sources */,
+				88DEDA2F1F6C50AE007E5D03 /* CalculatorTip.m in Sources */,
 				88DEDA1B1F6C2C08007E5D03 /* AppDelegate.m in Sources */,
 				88DEDA181F6C2C08007E5D03 /* main.m in Sources */,
 			);
